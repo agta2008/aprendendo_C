@@ -11,7 +11,9 @@ int main() {
     int chute = -1;
     int i = 1;
 
-    int pontos = 1000;
+    //adcionado pontos para que a brincadeira seja mais legal
+    double pontos = 1000;
+    pontos = pontos * 2;
 
     while(1) {
 
@@ -43,12 +45,12 @@ int main() {
             }
 
         //calculo da pontuacao
-        int pontosperdidos = (chute - numerosecreto) / 2;
+        double pontosperdidos = (chute - numerosecreto) / 2.0;
         pontos = pontos - pontosperdidos;
         }
     }
     printf("Tentativas %d \n", i);
     printf("Fim jogo \n");
-    printf("Total de pontos %d \n", pontos);
+    printf("Total de pontos %.f \n", pontos);
 }
 
